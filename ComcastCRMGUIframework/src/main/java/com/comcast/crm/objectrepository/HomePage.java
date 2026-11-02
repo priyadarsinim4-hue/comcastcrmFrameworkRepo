@@ -20,6 +20,13 @@ public class HomePage {
 	@FindBy(linkText = "Contacts")
 	private WebElement contactlink;
 	
+	@FindBy(linkText = "Products")
+	private WebElement productlink;
+	
+	public WebElement getProductlink() {
+		return productlink;
+	}
+
 	public void clickOnContactLink() {
 
 	    WebDriverWait wait =
